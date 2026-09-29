@@ -150,3 +150,62 @@ footer {
     background-color: #0b3d66;
     color: white;
 }
+/* SECCION EMPLEOS */
+
+.empleos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.empleos h2 {
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    margin-bottom: 30px;
+}
+
+
+.contenedor-empleos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+.llamado {
+    background-color: #ffffff;
+    border: 1px solid #d9dfe5;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
+    text-align: left;
+}
+
+
+.llamado h3 {
+    margin-top: 0;
+}
+
+
+.llamado p {
+    line-height: 1.5;
+}
+
+
+.llamado a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #1d4f91;
+    color: white;
+}
+
+
+.llamado a:hover {
+    background-color: #163b6d;
+}
+
