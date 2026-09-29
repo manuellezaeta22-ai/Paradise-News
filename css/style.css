@@ -62,10 +62,18 @@ nav a {
     text-decoration: none;
     margin: 0 12px;
     font-weight: bold;
+    padding-bottom: 4px;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
 }
 
 nav a:hover {
     color: #0b3d66;
+}
+
+/* Pestaña activa en el menú */
+nav a.activo {
+    color: #0b3d66;
+    border-bottom: 2px solid #0b3d66;
 }
 
 
@@ -110,14 +118,40 @@ main {
 }
 
 
-/* TARJETAS */
+/* TARJETAS DE NOTICIAS (SOPORTE CON IMÁGENES Y HOVER) */
 
 .noticia {
     flex: 1;
-    padding: 22px;
     background-color: #f1f4f7;
     border-radius: 12px;
     border: 1px solid #d5dde5;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto hover al pasar el ratón */
+.noticia:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Imagen superior de la noticia */
+.imagen-noticia {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Contenido de la noticia */
+.contenido-noticia {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 180px);
+    box-sizing: border-border-box;
 }
 
 .noticia h3 {
@@ -150,6 +184,8 @@ footer {
     background-color: #0b3d66;
     color: white;
 }
+
+
 /* SECCION EMPLEOS */
 
 .empleos {
@@ -204,6 +240,10 @@ footer {
     color: white;
 }
 
+
+.llamado a:hover {
+    background-color: #163b6d;
+}
 
 .llamado a:hover {
     background-color: #163b6d;
