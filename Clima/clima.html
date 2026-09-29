@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clima | Paradise-News</title>
+
+    <link rel="stylesheet" href="clima.css">
+</head>
+
+<body>
+
+    <main class="clima-container">
+
+        <header class="clima-header">
+            <p class="seccion">PARADISE-NEWS</p>
+            <h1>Clima</h1>
+            <p class="ubicacion">📍 Durazno, Uruguay</p>
+        </header>
+
+
+        <!-- CLIMA ACTUAL -->
+
+        <section class="clima-actual">
+
+            <div class="clima-principal">
+
+                <div class="icono">
+                    ☀️
+                </div>
+
+                <div>
+                    <span class="temperatura">
+                        --°
+                    </span>
+
+                    <p class="estado">
+                        Cargando...
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="clima-detalles">
+
+                <div class="detalle">
+                    <span>💧</span>
+                    <p>Humedad</p>
+                    <strong class="humedad">
+                        --%
+                    </strong>
+                </div>
+
+
+                <div class="detalle">
+                    <span>💨</span>
+                    <p>Viento</p>
+                    <strong class="viento">
+                        -- km/h
+                    </strong>
+                </div>
+
+
+                <div class="detalle">
+                    <span>🌡️</span>
+                    <p>Sensación</p>
+                    <strong class="sensacion">
+                        --°
+                    </strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRONÓSTICO -->
+
+        <section class="pronostico">
+
+            <h2>Pronóstico</h2>
+
+            <div class="dias"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="clima.js"></script>
+
+</body>
+
+</html>

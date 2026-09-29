@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+}
+
+.clima-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.clima-header {
+    margin-bottom: 25px;
+}
+
+.seccion {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.clima-header h1 {
+    font-size: 42px;
+    margin: 5px 0;
+}
+
+.ubicacion {
+    color: #666;
+}
+
+.clima-actual {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.clima-principal {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.icono-clima {
+    font-size: 70px;
+}
+
+.temperatura {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.estado {
+    color: #666;
+    font-size: 18px;
+}
+
+.datos-clima {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.dato {
+    background: #f2f4f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dato span {
+    font-size: 25px;
+}
+
+.dato p {
+    color: #666;
+    margin: 8px 0;
+}
+
+.dato strong {
+    font-size: 20px;
+}
+
+.pronostico h2 {
+    margin-bottom: 15px;
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.dia {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.dia span {
+    display: block;
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.dia strong {
+    font-size: 25px;
+}
+
+.dia p {
+    color: #777;
+    margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+
+    .datos-clima,
+    .dias {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .temperatura {
+        font-size: 45px;
+    }
+
+}
