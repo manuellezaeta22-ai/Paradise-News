@@ -201,14 +201,12 @@ footer {
     margin-bottom: 30px;
 }
 
-
 .contenedor-empleos {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
 }
-
 
 .llamado {
     background-color: #ffffff;
@@ -219,16 +217,21 @@ footer {
     text-align: left;
 }
 
+.llamado img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
 
 .llamado h3 {
     margin-top: 0;
 }
 
-
 .llamado p {
     line-height: 1.5;
 }
-
 
 .llamado a {
     display: inline-block;
@@ -240,12 +243,8 @@ footer {
     color: white;
 }
 
-
 .llamado a:hover {
     background-color: #163b6d;
 }
 
-.llamado a:hover {
-    background-color: #163b6d;
-}
 
