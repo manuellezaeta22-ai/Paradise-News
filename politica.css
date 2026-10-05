@@ -1,0 +1,114 @@
+/* ESTILO GENERAL */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9edf2;
+    color: #1d2a38;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: #0b3d66;
+    padding: 25px 40px;
+    border-bottom: 4px solid #dce3e9;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+/* NOMBRE */
+
+.encabezado h1 {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+
+.encabezado p {
+    margin: 5px 0 0;
+    color: #dce8f2;
+}
+/* MENÚ */
+
+nav {
+    background-color: #ffffff;
+    padding: 18px 40px;
+    text-align: center;
+    border-bottom: 1px solid #cbd5df;
+}
+
+nav a {
+    color: #1d2a38;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+nav a:hover {
+    color: #0b3d66;
+}
+
+body {font-family: Arial, Helvetica, sans-serif}
+* {box-sizing: border-box;}
+
+.bg-img {
+  /* The image used */
+  background-image: url("imagenes/uruguay.jpg");
+
+  min-height: 480px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 50px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #233d58;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
