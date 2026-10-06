@@ -109,19 +109,23 @@ main {
 }
 
 
-/* CONTENEDOR DE NOTICIAS */
+/* CONTENEDOR DE NOTICIAS (GRID PARA ORGANIZAR TARJETAS EN COLUMNAS) */
 
 .contenedor-noticias {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     margin-top: 25px;
+    align-items: stretch;
 }
 
 
 /* TARJETAS DE NOTICIAS (SOPORTE CON IMÁGENES Y HOVER) */
 
 .noticia {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #f1f4f7;
     border-radius: 12px;
     border: 1px solid #d5dde5;
@@ -150,8 +154,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100% - 180px);
-    box-sizing: border-border-box;
+    flex-grow: 1;
+    box-sizing: border-box;
 }
 
 .noticia h3 {
@@ -168,6 +172,8 @@ main {
     color: #0b3d66;
     font-weight: bold;
     text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 .noticia a:hover {
@@ -195,10 +201,6 @@ footer {
 
 .empleos h2 {
     margin-bottom: 10px;
-}
-
-.descripcion {
-    margin-bottom: 30px;
 }
 
 .contenedor-empleos {
@@ -247,7 +249,8 @@ footer {
     background-color: #163b6d;
 }
 
-/* --- MEJORAS SECCIÓN SEGURIDAD --- */
+
+/* --- SECCIÓN SEGURIDAD Y HERRAMIENTAS --- */
 
 /* Buscador de Noticias */
 .buscador-noticias {
@@ -305,8 +308,8 @@ footer {
 
 /* Caja de Contactos de Emergencia */
 .caja-emergencias {
-    background-color: #f8f9fa;
-    border-left: 5px solid #0b3d66;
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
     padding: 20px;
     border-radius: 8px;
     margin-top: 35px;
@@ -317,7 +320,7 @@ footer {
 
 .caja-emergencias h3 {
     margin-top: 0;
-    color: #0b3d66;
+    color: #856404;
     font-size: 18px;
     margin-bottom: 12px;
 }
@@ -336,15 +339,29 @@ footer {
     font-size: 14px;
 }
 
+/* Imágenes dentro de la lectura de noticia individual */
+.imagen-destacada {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.imagen-destacada img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.imagen-destacada figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+}
+
 /* Adaptabilidad para celulares */
 @media (max-width: 768px) {
-    .contenedor-noticias {
-        flex-direction: column;
-    }
     .caja-emergencias ul {
         flex-direction: column;
         gap: 10px;
     }
 }
-
-
