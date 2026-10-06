@@ -102,7 +102,26 @@
           </div>
         </article>
 
-      </div>
+        <article class="noticia">
+          <img src="imagenes/noticia1.jpg" alt="Videovigilancia en Durazno" class="imagen-noticia">
+          <div class="contenido-noticia">
+            <div>
+              <div class="meta-info">
+                <span class="badge">Tecnología</span>
+                <span class="fecha">30 Sep 2026</span>
+              </div>
+              <h3>
+                <a href="Seguridad/noticia-seguridad-4.html">Amplúan la red de cámaras de videovigilancia en puntos estratégicos</a>
+              </h3>
+              <p>
+                Se instalaron nuevas cámaras de monitoreo en accesos y zonas transitadas para fortalecer la prevención y respuesta policial.
+              </p>
+            </div>
+            <a href="Seguridad/noticia-seguridad-4.html">Leer noticia completa</a>
+          </div>
+        </article>
+
+      </div> <!-- FIN CONTENEDOR NOTICIAS -->
 
       <!-- CAJA DE TELÉFONOS ÚTILES Y EMERGENCIAS -->
       <aside class="caja-emergencias">
@@ -120,6 +139,28 @@
   <footer>
     <p>© 2026 ParadiseNews</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const inputBuscador = document.querySelector('.buscador-noticias input');
+      const tarjetasNoticias = document.querySelectorAll('.contenedor-noticias .noticia');
+
+      inputBuscador.addEventListener('keyup', (e) => {
+        const termino = e.target.value.toLowerCase();
+
+        tarjetasNoticias.forEach(tarjeta => {
+          const titulo = tarjeta.querySelector('h3').textContent.toLowerCase();
+          const texto = tarjeta.querySelector('p').textContent.toLowerCase();
+
+          if (titulo.includes(termino) || texto.includes(termino)) {
+            tarjeta.style.display = 'flex';
+          } else {
+            tarjeta.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 
