@@ -1,156 +1,285 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <html lang="es"> <head>
+<meta charset="UTF-8">
 
-<head>
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
+<title>Economía - ParadiseNews</title>
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+    href="CSS/style.css">
 
-    <title>Empleos - ParadiseNews</title>
+</head> <body>
+<header>
 
-    <link rel="stylesheet"
-        href="CSS/style.css">
+    <div class="encabezado">
 
-</head>
+        <img src="imagenes/logo.jpg"
+            alt="Logo de ParadiseNews"
+            class="logo">
 
+        <div>
 
-<body>
+            <h1>ParadiseNews</h1>
 
-    <header>
-
-        <div class="encabezado">
-
-            <img src="imagenes/logo.jpg"
-                alt="Logo de ParadiseNews"
-                class="logo">
-
-            <div>
-
-                <h1>ParadiseNews</h1>
-
-                <p>
-                    Noticias claras y actuales
-                    del Departamento de Durazno
-                </p>
-
-            </div>
+            <p>
+                Noticias claras y actuales
+                del Departamento de Durazno
+            </p>
 
         </div>
 
-    </header>
+    </div>
+
+</header>
 
 
-    <nav>
+<nav>
 
-        <a href="index.html">Inicio</a>
-        <a href="seguridad.html">Seguridad</a>
-        <a href="clima.html">Clima</a>
-        <a href="empleos.html">Empleos</a>
-        <a href="economia.html">Economía</a>
-        <a href="politica.html">Política</a>
+    <a href="index.html">Inicio</a>
+    <a href="seguridad.html">Seguridad</a>
+    <a href="clima.html">Clima</a>
+    <a href="empleos.html">Empleos</a>
+    <a href="economia.html">Economía</a>
+    <a href="politica.html">Política</a>
 
-    </nav>
+</nav>
 
-  <main>
+
+<main>
+
     <section class="Economia">
-      <h2>Economia de Durazno</h2>
-      <p class="descripcion">
-        Informacion sobre el estado de la economia en el departamento de Durazno.
-      </p>
 
-      <!-- BARRA DE BÚSQUEDA RÁPIDA -->
-      <div class="buscador-economia">
-        <input type="text" placeholder="Buscar novedades...">
-        <button type="button">Buscar</button>
-      </div>
+        <h2>Economía de Durazno</h2>
 
-     <!-- CONTENEDOR DE ECONOMÍA -->
-<div class="contenedor-economia">
+        <p class="descripcion">
+            Información sobre el estado de la economía
+            en el departamento de Durazno.
+        </p>
 
-  <article class="noticia">
-    <img src="imagenes/BPS.jpg"
-         alt="Aumento de jubilaciones y pensiones en Uruguay"
-         class="imagen-noticia">
 
-    <div class="contenido-noticia">
-      <div>
-        <div class="meta-info">
-          <span class="badge">Economia</span>
-          <span class="fecha">29 Sep 2026</span>
+        <!-- BARRA DE BÚSQUEDA RÁPIDA -->
+
+        <div class="buscador-economia">
+
+            <input type="text"
+                placeholder="Buscar novedades...">
+
+            <button type="button">
+                Buscar
+            </button>
+
         </div>
 
-        <h3>
-          <a href="#">
-            Jubilaciones y pensiones minimas recibieron nuevos aumentos durante 2026
-          </a>
-        </h3>
 
-        <p>
-          Unas 120.000 personas jubiladas y pensionistas recibieron desde julio
-          un incremento diferencial y adicional en sus pasividades. La medida
-          tambien alcanza a beneficiarios de Durazno y del resto del pais.
-        </p>
-  </article>
+        <!-- CONTENEDOR DE ECONOMÍA -->
+
+        <div class="contenedor-economia">
 
 
-  <article class="noticia">
-    <img src="imagenes/MTSS.jpg"
-         alt="Aumentos salariales en Uruguay"
-         class="imagen-noticia">
+            <!-- ============================= -->
+            <!-- NOTICIA 1 - BPS -->
+            <!-- ============================= -->
 
-    <div class="contenido-noticia">
-      <div>
-        <div class="meta-info">
-          <span class="badge">Economia</span>
-          <span class="fecha">29 Sep 2026</span>
+            <article class="noticia">
+
+                <img src="imagenes/BPS.jpg"
+                    alt="Aumento de jubilaciones y pensiones en Uruguay"
+                    class="imagen-noticia">
+
+
+                <div class="contenido-noticia">
+
+                    <div>
+
+                        <div class="meta-info">
+
+                            <span class="badge">
+                                Economía
+                            </span>
+
+                            <span class="fecha">
+                                29 Sep 2026
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+
+                            <a href="#">
+                                Jubilaciones y pensiones mínimas
+                                recibieron nuevos aumentos durante 2026
+                            </a>
+
+                        </h3>
+
+
+                        <p>
+                            Unas 120.000 personas jubiladas y pensionistas
+                            recibieron desde julio un incremento diferencial
+                            y adicional en sus pasividades. La medida también
+                            alcanza a beneficiarios de Durazno y del resto
+                            del país.
+                        </p>
+
+
+                        <!-- ENLACE DE LA PRIMERA NOTICIA -->
+
+                        <a href="https://www.bps.gub.uy/24396/aumento-diferencial-y-adicional-para-jubilaciones-y-pensiones-minimas.html"
+                            target="_blank">
+
+                            Leer más
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ============================= -->
+            <!-- NOTICIA 2 - MTSS -->
+            <!-- ============================= -->
+
+            <article class="noticia">
+
+                <img src="imagenes/MTSS.jpg"
+                    alt="Aumentos salariales en Uruguay"
+                    class="imagen-noticia">
+
+
+                <div class="contenido-noticia">
+
+                    <div>
+
+                        <div class="meta-info">
+
+                            <span class="badge">
+                                Economía
+                            </span>
+
+                            <span class="fecha">
+                                29 Sep 2026
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+
+                            <a href="#">
+                                Nuevos ajustes salariales alcanzan
+                                a trabajadores de distintos sectores
+                            </a>
+
+                        </h3>
+
+
+                        <p>
+                            Durante septiembre se continúan aplicando
+                            ajustes salariales correspondientes a distintos
+                            grupos de actividad. Los incrementos dependen
+                            del sector y del convenio colectivo correspondiente.
+                        </p>
+
+
+                        <!-- ENLACE DE LA SEGUNDA NOTICIA -->
+
+                        <a href="https://www.montevideo.com.uy/Noticias/Salario-real-aumento-en-agosto-un-1-28-en-comparacion-interanual-segun-el-INE-uc977059"
+                            target="_blank">
+
+                            Leer más
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ============================= -->
+            <!-- NOTICIA 3 - DGI -->
+            <!-- ============================= -->
+
+            <article class="noticia">
+
+                <img src="imagenes/DGI.jpg"
+                    alt="IRPF y devoluciones en Uruguay"
+                    class="imagen-noticia">
+
+
+                <div class="contenido-noticia">
+
+                    <div>
+
+                        <div class="meta-info">
+
+                            <span class="badge">
+                                Economía
+                            </span>
+
+                            <span class="fecha">
+                                29 Sep 2026
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+
+                            <a href="#">
+                                IRPF: continúan los trámites y pagos
+                                correspondientes al ejercicio 2025
+                            </a>
+
+                        </h3>
+
+
+                        <p>
+                            La DGI estableció entre el 29 de junio y el
+                            31 de agosto de 2026 el período para presentar
+                            las declaraciones juradas de IRPF. Los saldos
+                            correspondientes pueden abonarse en cuotas
+                            durante el año.
+                        </p>
+
+
+                        <!-- ENLACE DE LA TERCERA NOTICIA -->
+
+                        <a href="https://www.gub.uy/direccion-general-impositiva/comunicacion/noticias/campana-2025-irpf-iass"
+                            target="_blank">
+
+                            Leer más
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
         </div>
 
-        <h3>
-          <a href="#">
-            Nuevos ajustes salariales alcanzan a trabajadores de distintos sectores
-          </a>
-        </h3>
+    </section>
 
-        <p>
-          Durante septiembre se continuan aplicando ajustes salariales
-          correspondientes a distintos grupos de actividad. Los incrementos
-          dependen del sector y del convenio colectivo correspondiente.
-        </p>
-  </article>
+</main>
 
 
-  <article class="noticia">
-    <img src="imagenes/DGI.jpg"
-         alt="IRPF y devoluciones en Uruguay"
-         class="imagen-noticia">
+<footer>
 
-    <div class="contenido-noticia">
-      <div>
-        <div class="meta-info">
-          <span class="badge">Economia</span>
-          <span class="fecha">29 Sep 2026</span>
-        </div>
+    <p>
+        © 2026 ParadiseNews
+    </p>
 
-        <h3>
-          <a href="#">
-            IRPF: continuan los tramites y pagos correspondientes al ejercicio 2025
-          </a>
-        </h3>
+</footer>
 
-        <p>
-          La DGI establecio entre el 29 de junio y el 31 de agosto de 2026
-          el periodo para presentar las declaraciones juradas de IRPF.
-          Los saldos correspondientes pueden abonarse en cuotas durante el año.
-        </p>
-  </article>
-
-
-  <footer>
-    <p>© 2026 ParadiseNews</p>
-  </footer>
-
-</body>
-
-</html>
+</body> </html>
