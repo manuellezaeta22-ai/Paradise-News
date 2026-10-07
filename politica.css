@@ -63,6 +63,7 @@ nav a {
     transition: color 0.2s ease, border-bottom 0.2s ease;
 }
 
+
 nav a:hover {
     color: #0b3d66;
 }
@@ -72,7 +73,7 @@ body {font-family: Arial, Helvetica, sans-serif}
 
 .bg-img {
   /* The image used */
-  background-image: url("imagenes/uruguay.jpg");
+  background-image: url("imagenes/montevideo_grande.png");
 
   min-height: 480px;
 
@@ -112,3 +113,87 @@ body {font-family: Arial, Helvetica, sans-serif}
   background-color: #ddd;
   color: black;
 }
+
+/* titulo */
+
+h1 {
+  font-family: "Comic Sans MS", cursive;
+  color: rgb(0, 0, 0);
+}
+
+h1 span {
+  color: #172c88;
+  text-shadow: 0 0 10px rgba(0, 166, 232, 0.4);
+}
+
+/* tarjeta de noticias */
+
+.tarjetas {
+  display: grid;
+
+  grid-template-columns:
+      repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+
+.tarjeta {
+  background: rgb(255, 255, 255);
+
+  padding: 35px;
+
+  border: 1px solid var(--borde);
+
+  border-radius: 18px;
+
+  transition: 0.3s;
+}
+
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+.icono {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 14px;
+
+  background: #2d2864;
+
+  color: var(--primario);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+
+  margin-bottom: 20px;
+}
+
+
+.tarjeta h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+
+.tarjeta p {
+  color: var(--gris);
+  margin-bottom: 20px;
+}
+
+
+.tarjeta a {
+  color: var(--primario);
+  font-weight: bold;
+}
+
+
