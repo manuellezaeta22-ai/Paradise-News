@@ -1,12 +1,12 @@
 /* ESTILO GENERAL */
 
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #e9edf2;
-    color: #1d2a38;
+    color: #263445;
 }
-
 
 /* ENCABEZADO */
 
@@ -30,7 +30,7 @@ header {
     height: 75px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid white;
+    border: 4px solid rgb(0, 0, 0);
 }
 
 
@@ -89,7 +89,7 @@ main {
 /* SECCIÓN DE NOTICIAS */
 
 .noticias {
-    background-color: #ffffff;
+    background-color: #ffffff85;
     padding: 30px;
     border-radius: 16px;
     border: 1px solid #d3dce4;
@@ -99,11 +99,32 @@ main {
 /* TÍTULO */
 
 .noticias h2 {
-    margin-top: 0;
-    color: #0b3d66;
-    font-size: 30px;
+    color: #12365a;
 }
 
+.noticia h3 {
+    color: #12365a;
+}
+
+.encabezado-actualidad {
+    color: #12365a;
+}
+
+.texto-principal h3 {
+    color: #12365a;
+}
+
+.texto-secundario h3 {
+    color: #12365a;
+}
+
+.inicio-noticias > h2 {
+    color: #12365a;
+}
+
+.inicio-contenido h3 {
+    color: #12365a;
+}
 .descripcion {
     color: #687785;
 }
@@ -365,3 +386,336 @@ footer {
         gap: 10px;
     }
 }
+
+
+/* INICIO */
+
+.pagina-inicio {
+    background-color: #f2f5f9;
+    padding: 35px 20px;
+}
+
+.portada-inicio {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #dce3e9;
+    border-radius: 14px;
+}
+
+.portada-cabecera {
+    background-color: #0b3d66;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.portada-cabecera h2 {
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.portada-cabecera p {
+    line-height: 1.5;
+}
+
+.encabezado-actualidad {
+    color: #0b3d66;
+    border-bottom: 2px solid #dce3e9;
+    margin-bottom: 20px;
+}
+
+.portada-principal {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f1f4f7;
+    border: 1px solid #d5dde5;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.portada-principal img {
+    width: 45%;
+    min-width: 250px;
+    object-fit: cover;
+}
+
+.texto-principal {
+    flex: 1;
+    padding: 25px;
+}
+
+.texto-principal h3 {
+    color: #0b3d66;
+    font-size: 24px;
+}
+
+.texto-principal p {
+    color: #5f6d79;
+    line-height: 1.6;
+}
+
+.texto-principal a,
+.texto-secundario a {
+    color: #0b3d66;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.texto-principal a:hover,
+.texto-secundario a:hover {
+    text-decoration: underline;
+}
+
+.categoria-inicio {
+    color: #3879be;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.portada-secundarias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.texto-secundario {
+    flex: 1;
+    min-width: 250px;
+    padding: 22px;
+    background-color: #f1f4f7;
+    border: 1px solid #d5dde5;
+    border-radius: 12px;
+}
+
+.texto-secundario h3 {
+    color: #0b3d66;
+}
+
+.texto-secundario p {
+    color: #5f6d79;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .portada-inicio {
+        padding: 15px;
+    }
+
+    .portada-cabecera {
+        padding: 20px;
+    }
+
+    .portada-principal img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .texto-principal {
+        padding: 20px;
+    }
+}
+
+.portada-fondo {
+    background-image:
+        linear-gradient(
+            rgba(1, 20, 45, 0.65),
+            rgba(1, 20, 45, 0.65)
+        ),
+        url("https://durazno.uy/images/igallery/resized/sarandi-20/3--plaza-sarandi-1600-1000-80.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 70px 35px;
+    color: white;
+    border-radius: 12px;
+}
+
+/* NOTICIAS DE INICIO */
+
+.inicio-noticias {
+    max-width: 1150px;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: #f2f5f9;
+    border-radius: 14px;
+}
+
+.inicio-noticias > h2 {
+    color: #0b3d66;
+    margin-bottom: 8px;
+}
+
+.introduccion-inicio {
+    color: #5f6d79;
+    margin-bottom: 25px;
+}
+
+.bloques-noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.bloque-noticia {
+    background-color: white;
+    border: 1px solid #d5dde5;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.bloque-noticia img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.noticia-principal-inicio {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+}
+
+.noticia-principal-inicio img {
+    height: 100%;
+    min-height: 300px;
+}
+
+.contenido-inicio {
+    padding: 20px;
+}
+
+.contenido-inicio h3 {
+    color: #0e76cb;
+}
+.categoria-inicio {
+    color: #3879be;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contenido-inicio h3 {
+    color: #0e76cb;
+}
+
+.contenido-inicio > p:not(.categoria-inicio) {
+    color: #5f6d79;
+    line-height: 1.5;
+}
+
+.contenido-inicio details {
+    margin-top: 15px;
+}
+
+.contenido-inicio summary {
+    color: #0e6dba;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contenido-inicio details a {
+    color: #0a61a9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    .bloques-noticias {
+        grid-template-columns: 1fr;
+    }
+
+    .noticia-principal-inicio {
+        grid-column: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .noticia-principal-inicio img {
+        height: 200px;
+        min-height: au
+        to;
+    }
+}
+
+/* INICIO */
+
+.inicio {
+    background-color: #00000052;
+    padding: 30px 20px;
+}
+
+.inicio-bloques {
+    grid-template-columns: 1.15fr 1fr;
+    align-items: stretch;
+}
+
+.inicio-principal {
+    grid-row: span 2;
+}
+
+.inicio-bloques .noticia {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.inicio-bloques .imagen-noticia {
+    height: 190px;
+}
+
+.inicio-principal .imagen-noticia {
+    height: 250px;
+}
+
+.inicio-contenido {
+    padding: 20px;
+}
+
+.inicio-categoria {
+    color: #3879be;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.inicio-contenido h3 {
+    color: #0b3d66;
+}
+
+.inicio-contenido p {
+    line-height: 1.5;
+}
+
+.inicio-contenido summary {
+    color: #084e88;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.inicio-contenido details a {
+    color: #0f6ebd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.inicio-contenido details a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+
+    .inicio-bloques {
+        grid-template-columns: 1fr;
+    }
+
+    .inicio-principal {
+        grid-row: auto;
+    }
+
+}
+
+
